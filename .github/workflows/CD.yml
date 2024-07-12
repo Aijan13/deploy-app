@@ -51,6 +51,6 @@ jobs:
 
     - name: Deploy 
       run: |
-        helm upgrade --install my-release ./hello --set repository.image=${{ input.docker_image }} --set repository.tag=${{ input.image_tag }}
+        helm upgrade --install my-release ./hello --set repository.image=${{ inputs.docker_image }} --set repository.tag=${{ inputs.image_tag }}
         
    
